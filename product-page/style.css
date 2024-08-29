@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(197, 238, 251);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.boxes {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background: rgb(170, 170, 224);
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leftBox {
+    /* background: url(./images/pinkTop.webp); */
+    background-position: center;
+    background-size: cover;
+    flex-basis: 47%;
+    /* height: 72vh; */
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgb(226, 152, 152);
+    transform: scale(1.0);
+    position: relative;
+}
+
+.leftBox img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightBox {
+    background-color: #fff;
+    flex-basis: 53%;
+    padding: 20px 25px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.rightBox h1{
+    font-size: 33px;
+    font-weight: 700;
+    margin-top: 14px;
+color: rgb(39, 34, 34);
+}
+.rightBox h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 14px;
+    color: rgb(99, 99, 99);
+}
+.rightBox h3{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(245, 109, 60);
+    margin-top: 14px;
+    margin-bottom: 20px;
+
+}
+
+.rightBox p{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(65, 64, 64);
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    /* justify-content: space-between; */
+    font-size: 20px;
+}
+.size-select input:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+.size-select p{
+    width: 70px;
+    font-size: 25px;
+
+}
+.size-select input{
+    display: none;
+    
+}
+.size-select label{
+    /* width: 70px; */
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.color-select p{
+    width: 75px;
+    font-size: 25px;
+
+}
+.color-select label{
+    /* width: 70px; */ 
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.color-select span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.color-1{
+    background: red;
+}
+.color-2{
+    background: blue;
+}
+.color-3{
+    background: pink;
+}
+.color-4{
+    background: orange;
+}
+.color-5{
+    background: yellow;
+}
+.color-select input{
+    display: none;
+    
+}
+.color-select input:checked + span{
+    /* border: 2px solid rgb(80, 80, 138);
+    transform: scale(1.5); */
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff,0 0 0 6px #000;
+
+}
+
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    /* justify-content: space-evenly; */
+}
+.quantity-select p{
+    width: 100px ;
+    font-size: 25px;
+    margin-right: 10px;
+    /* margin: 1px; */
+
+}
+.quantity-select input{
+     border: 0;
+     outline: 0;
+     background: #c9bfbf;
+     padding: 2px 2px 2px 15px;
+     width: 100px;
+     border-radius: 12px;
+    font-size: 22px;
+margin-left: 10px;
+
+}
+form button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    background: rgb(250, 112, 62);
+    color: #fff;
+    margin-top: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    box-shadow: 9px 5px 17px rgba(0, 0, 0, 0.5);
+}
+.controls{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.btn{
+display: block;
+    width: 15px;
+    height: 15px;
+    background: gray;
+border-radius: 50%;
+margin-top: 10px;
+cursor: pointer;
+}
+.btn.active{
+    background: pink;
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff,0 0 0 6px #000;
+}

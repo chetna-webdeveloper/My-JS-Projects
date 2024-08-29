@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation-Form</title>
+    <link rel="stylesheet" href="My-Projects-AI-Contact.css">
+    <script src="https://kit.fontawesome.com/dff045b6f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    <div class="container">
+                       <!-- Navbar -->
+        <nav>
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="#">My-JS-Projects</a>
+                </div>
+                <div class="nav-pages">
+                    <ul>
+                        <li><a href="../My-Projects-AI-Home/My-Projects-AI.html">Home <i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="../My-Projects-AI-About/My-Projects-AI-About.html">About <i class="fa-regular fa-address-card"></i></a></li>
+                        <li><a href="../My-Projects-AI-Contact/My-Projects-AI-Contact.html">Contact <i class="fa-solid fa-address-book"></i></a></li>
+                        <li><a href="../My-Projects-AI-Projects/My-Projects-AI-Projects.html">Projects <i class="fa-solid fa-list-check"></i></a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+       <div class="container-contact">
+        <form  action="https://api.web3forms.com/submit" method="POST" >
+            <i class="fa-solid fa-paper-plane"></i>
+            <input type="hidden" name="access_key" value="cf01ce7d-6deb-4c4b-8bf8-d97fc8a2bc64">
+            <div class="input-group">
+                <label >Full Name</label>
+                <input  type="text" name="name" placeholder="Enter Your Name.." id="name" onkeyup="validateName()">
+                <span id="name-error"> </span>
+            </div>
+            <div class="input-group">
+                <label >Phone No.</label>
+                <input type="number" name="number"  placeholder=" +91 1234567809"  id="number" onkeyup="validateNumber()">
+                <span id="number-error"> </span>
+            </div>
+            <div class="input-group">
+                <label >Email Id</label>
+                <input type="email"name="email"   placeholder="Enter Your Email Id.."  id="email" onkeyup="validateEmail()">
+                <span id="email-error"> </span>
+            </div>
+            <div class="input-group">
+                <label >Your Message</label>
+                <textarea rows="5" name="message" placeholder="Enter Your Message"  id="message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"> </span>
+            </div>
+            <button type="submit" onclick="return validateSubmit()" id="submit">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+    </div>
+
+ 
+</div>
+
+<!-- Footer -->
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Footer Navigation Links -->
+        <div class="footer-nav">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="../My-Projects-AI-Home/My-Projects-AI.html">Home</a></li>
+                <li ><a href="../My-Projects-AI-About/My-Projects-AI-About.html">About</a></li>
+                <li><a href="../My-Projects-AI-Projects/My-Projects-AI-Projects.html">Projects</a></li>
+                <li><a href="../My-Projects-AI-Contact/My-Projects-AI-Contact.html" >Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Social Media Links -->
+        <div class="footer-social">
+            <h2>Follow Me</h2>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Footer Contact Info -->
+        <div class="footer-contact">
+            <h2>Contact Info</h2>
+            <p><i class="fa-solid fa-envelope"></i> chetnachetna8585@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9315831292</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> A-22 , south anarkali , Delhi ,India</p>
+        </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Chetna. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="My-Projects-AI-Contact.js"></script>
+</body>
+</html>

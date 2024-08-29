@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(8, 8, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rightbox,#leftbox{
+    height: 300px;
+    width: 200px;
+    border: 2px dotted rgb(252, 255, 185);
+    margin: 20px;
+}
+.list{
+    margin: 12px;
+    /* font-size: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    background-color: rgb(251, 65, 102);
+    height: 40px;
+    cursor: grabbing;
+}

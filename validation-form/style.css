@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(21, 21, 93) ;
+    position: relative;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form{
+    width: 90%;
+    padding: 10px;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 9px;
+    color: rgb(21, 21, 93);
+    font-size: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+    margin: 12px 0px 19px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.input-group label{
+/* margin-right: 16px;
+font-size: 20px;
+font-weight: 500;
+width: 150px; */
+flex-basis: 28%;
+}
+
+.input-group input, .input-group textarea{
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgb(61, 60, 60);
+    padding: 9px;
+    flex-basis: 62%;
+
+}
+
+form button{
+    border: 0;
+    outline: 0;
+    padding: 13px 19px;
+    border-radius: 10px;
+    background-color:rgb(21, 21, 93) ;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin:  27px auto 12px;
+    cursor: pointer;
+}
+.input-group span{
+    color: red;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 13px;
+}
+#submit-error{
+    color: red;
+    position: absolute;
+    /* right: 10px; */
+    bottom: 15px;
+    /* margin: 12px auto 13px ; */
+    font-size: 18px;
+}
+.fa-circle-check{
+    font-size: 22px;
+    color: green;
+
+}
