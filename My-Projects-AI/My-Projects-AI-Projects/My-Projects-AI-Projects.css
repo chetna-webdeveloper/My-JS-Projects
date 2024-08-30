@@ -191,12 +191,11 @@ body {
 /* Footer Styles */
 .footer {
     background: #333;
-    color: #fff;
- padding-top: 2rem;
     width: 100%;
+    color: #fff;
+    padding-top: 2rem ;
     text-align: center;
     border-top: 4px solid #007BFF;
-    /* margin-top: 2rem; */
 }
 
 .footer-container {
@@ -204,8 +203,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1200px;
-    /* margin: 0 auto; */
-    /* padding: 1rem; */
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .footer-nav,
@@ -300,13 +299,3 @@ body {
         text-align: center;
     }
 }
-
-
-../My-Projects-AI-Home/My-Projects-AI.html
-
-../My-Projects-AI-About/My-Projects-AI-About.html
-
-../My-Projects-AI-Contact/My-Projects-AI-Contact.html
-
-
-../My-Projects-AI-Projects/My-Projects-AI-Projects.html
