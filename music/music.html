@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-web</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/dff045b6f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="musicCard">
+          <nav class="navbar">
+          <div><i class="fa-solid fa-arrow-left-long"></i></div>
+          <div><i class="fa-solid fa-bars"></i></div>   
+          </nav>
+            <div class="insideCard">
+                <img src="./audio and images/music.jpeg" alt="">
+          <h1>Fuzi Kaze</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+            
+            <div class="audiobg"> 
+                <audio  id="song">
+                    <source src="./audio and images/music.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" name="" id="progress">
+                <div class="durationAudio">
+                <div id="currentTimeDiv"><span id="currentTime">00:00</span></div> <!--chatgpt-->
+                <div id="actualTimeDiv"><span id="duration">00:00</span></div> 
+                <div><span id="timeLeft">00:00</span></div><!--chatgpt-->
+            </div>
+                <div id="bottonIcon">
+                    <i class="fa-solid fa-backward" onclick="backward()"></i>
+                    <i id="play" onclick="playPause()" class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward" onclick="forward()"></i>
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="music.js"></script>
+</body>
+
+</html>
